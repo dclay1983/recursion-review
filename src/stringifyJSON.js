@@ -22,7 +22,7 @@ if (typeof obj === 'object') {
     for(let key in obj) {
       let test = stringifyJSON(obj[key]);
       if (test !== undefined) {
-        results.push(`${key}:${test}`);
+        results.push(`"${key}":${test}`);
       }
       return `{${results.join(',')}}`
     }
