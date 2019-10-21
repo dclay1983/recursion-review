@@ -24,8 +24,9 @@ if (typeof obj === 'object') {
       if (test !== undefined) {
         results.push(`"${key}":${test}`);
       }
-      return `{${results.join(',')}}`
     }
+    return `{${results.join(',')}}`
+
   }
 }
 return typeof obj === 'string' ? `"${obj}"` : `${obj}`;
