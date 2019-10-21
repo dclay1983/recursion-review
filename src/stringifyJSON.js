@@ -4,5 +4,13 @@
 // but you don't so you're going to write it from scratch:
 
 var stringifyJSON = function(obj) {
-  // your code goes here
+if (obj === undefined || typeof obj === 'function') {
+  return undefined;
+}
+if (typeof obj === 'object') {
+  // deal with arrays and objects
+}
+return typeof obj === 'string' ? `'${obj}'` : `${obj}`;
+
+
 };
