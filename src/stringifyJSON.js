@@ -7,6 +7,7 @@ var stringifyJSON = function(obj) {
 if (obj === undefined || typeof obj === 'function') {
   return undefined;
 }
+if (obj===null){return "null"}
 if (typeof obj === 'object') {
   let results = [];
   if(Array.isArray(obj)) {
