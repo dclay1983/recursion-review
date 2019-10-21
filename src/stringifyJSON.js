@@ -28,7 +28,7 @@ if (typeof obj === 'object') {
     }
   }
 }
-return typeof obj === 'string' ? `'${obj}'` : `${obj}`;
+return typeof obj === 'string' ? `"${obj}"` : `${obj}`;
 
 
 };
